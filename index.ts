@@ -1,7 +1,7 @@
 import fastify from "fastify";
 import { Type } from "@sinclair/typebox";
 
-const app = fastify({ logger: { level: 'info', prettyPrint: true } });
+const app = fastify({ logger: { level: 'info', transport: { target: "pino-pretty", options: { colorize: true } } } });
 
 const DatumBase = Type.Object({ _id: Type.String() });
 const Datum = Type.Intersect([DatumBase, Type.Union([
