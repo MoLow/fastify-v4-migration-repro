@@ -1,0 +1,19 @@
+{
+  "name": "fastify-v4-migration-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch -r ts-node/register/transpile-only index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sinclair/typebox": "^0.29.6",
+    "fastify": "^3.29.4",
+    "pino-pretty": "^10.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.3"
+  }
+}
